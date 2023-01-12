@@ -1,0 +1,10 @@
+name: Build QMK firmware
+
+on: [push, workflow_dispatch]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    uses: qmk/qmk_firmware/.github/workflows/qmk_keymap.yml@57b14f647aadd94b10db7e642fb84bca6ddaf698
